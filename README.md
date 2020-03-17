@@ -42,3 +42,6 @@ EXAMPLE:
 
 ## API
 - [exchangeratesapi](https://exchangeratesapi.io/)
+
+## License
+[MIT](https://opensource.org/licenses/MIT)
