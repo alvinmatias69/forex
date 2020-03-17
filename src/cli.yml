@@ -1,0 +1,24 @@
+name: forex
+version: "0.1.0"
+author: Matias Alvin <alvinmatias@protonmail.com>
+about: Converting currencies in your terminal
+args:
+  - cache:
+      help: bypass cache
+      long: no-cache
+  - precision:
+      help: set a custom currency precision
+      short: p
+      long: precision
+      takes_value: true
+      default_value: "2"
+  - amount:
+      help: floating number of cash to convert
+      required: true
+  - base:
+      help: base currency of conversion
+      default_value: IDR
+  - target:
+      help: target currency of conversion
+      multiple: true
+      default_value: USD

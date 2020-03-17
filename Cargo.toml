@@ -1,0 +1,16 @@
+[package]
+name = "forex"
+version = "0.1.0"
+authors = ["Matias Alvin <alvinmatias69@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = { version = "0.10", features = ["blocking", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+clap = {version = "2.33", features = ["yaml"]}
+
+[profile.release]
+opt-level = "z"  # Optimize for size.
+lto = true
+codegen-units = 1
+panic = "abort"
