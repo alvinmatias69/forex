@@ -12,7 +12,10 @@ $ make build
 make sure you've rust (1.43 nightly) installed on your system.
 
 - crates.io
-TODO
+
+``` sh
+$ cargo install forex
+```
 
 ## Usage
 
